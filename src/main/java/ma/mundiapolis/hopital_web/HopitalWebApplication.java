@@ -22,7 +22,7 @@ public class HopitalWebApplication {
         SpringApplication.run(HopitalWebApplication.class, args);
     }
 
-    @Bean
+    //@Bean
     CommandLineRunner commandLineRunner(PatientRepository patientRepository){
         return args -> {
             patientRepository.save(new Patient(null,"Mustapha", new Date(), false,312));
